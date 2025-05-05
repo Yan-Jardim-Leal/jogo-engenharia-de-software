@@ -1,8 +1,8 @@
 # jogo-engenharia-de-software
 Linguagem escolhida: Java
 
-Integrantes:
-Yan Jardim Leal
-Rafael Adonis Menon
-Hebert Portela
-Gabriel Capri
+Integrantes: <br>
+Yan Jardim Leal <br>
+Rafael Adonis Menon <br>
+Hebert Portela <br>
+Gabriel Capri <br>
