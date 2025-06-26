@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 659418db5bde9f74c94a375c8c887c11
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - menuDeGanho: {instanceID: 0}
+  - spriteEstrelaVazia: {fileID: 1394030554375800905, guid: 2640c2ea3a65e7f47ba1d5761e07e249, type: 3}
+  - spriteEstrelaCheia: {fileID: -3771177896906429973, guid: 81c26f72408365344925197a24a4daec, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
