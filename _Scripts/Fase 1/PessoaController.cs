@@ -7,6 +7,8 @@ public class PessoaController : MonoBehaviour
 {
     [Tooltip("Defina aqui quais camadas são consideradas obstáculos para o objeto.")]
     public LayerMask obstacleLayerMask;
+    public AudioManager soundManager;
+    public AudioClip clipeDeAudio;
 
     private Rigidbody2D rb;
     private BoxCollider2D boxCollider;
@@ -23,7 +25,8 @@ public class PessoaController : MonoBehaviour
     }
 
     void OnMouseDown()
-    {
+    {   
+        soundManager.TocarSom(clipeDeAudio);
         // Guarda a posição inicial no momento do clique
         startPosition = transform.position; 
         

@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     // Arraste o painel/menu que aparece quando o jogador ganha
     public GameObject menuDeGanho;
 
+    public AudioSource audioSource;
+    public AudioClip clipeDeAudioEstrela;
+    public AudioClip clipeDeAudioGanhar;
+
     [Header("Sprites das Estrelas")]
     // Arraste aqui o sprite da estrela vazia
     public Sprite spriteEstrelaVazia;
@@ -71,7 +75,8 @@ public class GameManager : MonoBehaviour
             Debug.Log("VOCÊ VENCEU!");
             // Ativa o menu de vitória
             if (menuDeGanho != null)
-            {
+            {   
+                audioSource.PlayOneShot(clipeDeAudioGanhar);
                 menuDeGanho.SetActive(true);
             }
     }
@@ -93,7 +98,8 @@ public class GameManager : MonoBehaviour
         }
 
         if (estrelasUIFase[pontosAtuais] != null)
-        {
+        {   
+            audioSource.PlayOneShot(clipeDeAudioEstrela);
             estrelasUIFase[pontosAtuais].sprite = spriteEstrelaCheia;
         }
         
@@ -102,7 +108,8 @@ public class GameManager : MonoBehaviour
 
         // Verifica se o jogador venceu
         if (pontosAtuais > pontosParaVencer)
-        {
+        {   
+            audioSource.PlayOneShot(clipeDeAudioGanhar);
             finalizar();
         }
     }
