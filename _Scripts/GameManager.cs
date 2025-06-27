@@ -65,6 +65,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Função para finalizar a fase
+    public void finalizar()
+    {
+            Debug.Log("VOCÊ VENCEU!");
+            // Ativa o menu de vitória
+            if (menuDeGanho != null)
+            {
+                menuDeGanho.SetActive(true);
+            }
+    }
+
     // Esta função será chamada pelo script VerificadorDeLixo
     public void AdicionarPonto()
     {
@@ -92,12 +103,7 @@ public class GameManager : MonoBehaviour
         // Verifica se o jogador venceu
         if (pontosAtuais > pontosParaVencer)
         {
-            Debug.Log("VOCÊ VENCEU!");
-            // Ativa o menu de vitória
-            if (menuDeGanho != null)
-            {
-                menuDeGanho.SetActive(true);
-            }
+            finalizar();
         }
     }
 }
