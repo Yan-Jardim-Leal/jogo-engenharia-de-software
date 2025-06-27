@@ -17,22 +17,28 @@ public class Palestrante : MonoBehaviour
     [Header("Configurações das Frases")]
     public Palavra[] palavrasDeAcao = new Palavra[]
     {
+        // Ações que se aplicam a conceitos positivos
         new Palavra { texto = "Aumentar", ehPositiva = true },
-        new Palavra { texto = "Diminuir", ehPositiva = false },
         new Palavra { texto = "Incentivar", ehPositiva = true },
-        new Palavra { texto = "Combater", ehPositiva = false },
         new Palavra { texto = "Promover", ehPositiva = true },
-        new Palavra { texto = "Reduzir", ehPositiva = false }
+
+        // Ações que se aplicam a conceitos negativos
+        new Palavra { texto = "Reduzir", ehPositiva = false },
+        new Palavra { texto = "Diminuir", ehPositiva = false },
+        new Palavra { texto = "Combater", ehPositiva = false }
     };
 
     public Palavra[] palavrasDeContexto = new Palavra[]
     {
-        new Palavra { texto = "o Meio Ambiente", ehPositiva = true },
-        new Palavra { texto = "a Poluição", ehPositiva = false },
-        new Palavra { texto = "a Educação", ehPositiva = true },
-        new Palavra { texto = "a Desigualdade", ehPositiva = false },
-        new Palavra { texto = "a Saúde Pública", ehPositiva = true },
-        new Palavra { texto = "a Violência", ehPositiva = false }
+        // Conceitos positivos (que devem ser combinados com ações positivas)
+        new Palavra { texto = "a Reciclagem de Materiais", ehPositiva = true },
+        new Palavra { texto = "o Descarte Correto do Lixo", ehPositiva = true },
+        new Palavra { texto = "o Uso de Transporte Público", ehPositiva = true },
+
+        // Conceitos negativos (que devem ser combinados com ações negativas)
+        new Palavra { texto = "a Poluição do Ar", ehPositiva = false },
+        new Palavra { texto = "o Congestionamento Urbano", ehPositiva = false },
+        new Palavra { texto = "o Uso de Carros Individuais", ehPositiva = false }
     };
 
     [Header("Referências da UI")]
