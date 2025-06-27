@@ -1,0 +1,97 @@
+{
+  "alunos": [
+    {
+      "alunoId": 1,
+      "nome": "Roberto",
+      "data": "01/01/2001",
+      "hora": "13:02",
+      "fase1": {
+        "tempo": 252,
+        "pontuacao": 34,
+        "taxaDeAcerto": 50
+      },
+      "fase2": {
+        "tempo": 122,
+        "acertos": 4,
+        "erros": 0,
+        "taxaDeAcerto": 100
+      },
+      "fase3": {
+        "tempo": 93,
+        "acertos": 5,
+        "erros": 1,
+        "taxaDeAcerto": 80
+      }
+    },
+    {
+      "alunoId": 1,
+      "nome": "Roberto",
+      "data": "01/01/2001",
+      "hora": "13:02",
+      "fase1": {
+        "tempo": 252,
+        "pontuacao": 34,
+        "taxaDeAcerto": 50
+      },
+      "fase2": {
+        "tempo": 122,
+        "acertos": 4,
+        "erros": 0,
+        "taxaDeAcerto": 100
+      },
+      "fase3": {
+        "tempo": 93,
+        "acertos": 5,
+        "erros": 1,
+        "taxaDeAcerto": 80
+      }
+    },
+    {
+      "alunoId": 1,
+      "nome": "Roberto",
+      "data": "01/01/2001",
+      "hora": "13:02",
+      "fase1": {
+        "tempo": 252,
+        "pontuacao": 34,
+        "taxaDeAcerto": 50
+      },
+      "fase2": {
+        "tempo": 122,
+        "acertos": 4,
+        "erros": 0,
+        "taxaDeAcerto": 100
+      },
+      "fase3": {
+        "tempo": 93,
+        "acertos": 5,
+        "erros": 1,
+        "taxaDeAcerto": 80
+      }
+    },
+    {
+      "alunoId": 1,
+      "nome": "Roberto",
+      "data": "01/01/2001",
+      "hora": "13:02",
+      "fase1": {
+        "tempo": 252,
+        "pontuacao": 34,
+        "taxaDeAcerto": 50
+      },
+      "fase2": {
+        "tempo": 122,
+        "acertos": 4,
+        "erros": 0,
+        "taxaDeAcerto": 100
+      },
+      "fase3": {
+        "tempo": 93,
+        "acertos": 5,
+        "erros": 1,
+        "taxaDeAcerto": 80
+      }
+    }
+
+  ]
+}

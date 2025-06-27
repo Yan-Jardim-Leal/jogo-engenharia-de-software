@@ -36,7 +36,7 @@ public class ControladorDeCena : MonoBehaviour
         SceneManager.LoadScene("_Scenes/Fase 3");
     }
 
-    public void irParaMenu()
+    public void IrParaMenu()
     {
         SceneManager.LoadScene("_Scenes/Menu Inicial");
     }
