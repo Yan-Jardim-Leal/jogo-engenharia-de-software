@@ -1,5 +1,5 @@
 # jogo-engenharia-de-software
-Linguagem escolhida: Java
+Linguagem escolhida: C# - Unity
 
 Integrantes: <br>
 Yan Jardim Leal <br>
