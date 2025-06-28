@@ -283,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1180837851738643188}
-  - component: {fileID: 5460701789867691590}
+  - component: {fileID: 2688602894403656403}
   m_Layer: 5
   m_Name: Fases
   m_TagString: Untagged
@@ -323,7 +323,7 @@ RectTransform:
   m_AnchoredPosition: {x: 26.010986, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5460701789867691590
+--- !u!114 &2688602894403656403
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -332,12 +332,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3060564453568171061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a43f337cfc0ce0a459616c1320d36fb9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6643516a4581f0943bfb61aa310e27a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fase1TextoTempo: {fileID: 2622006266159858659}
   fase1TextoPontuacao: {fileID: 7218289773075525946}
-  fase1TaxaDeAcerto: {fileID: 0}
   fase2TextoTempo: {fileID: 4519960684412294248}
   fase2TextoAcertos: {fileID: 1542020035225794321}
   fase2TextoErros: {fileID: 2188075914833600943}
