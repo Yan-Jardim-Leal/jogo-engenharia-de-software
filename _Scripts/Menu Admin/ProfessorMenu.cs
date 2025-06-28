@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI; 
@@ -6,7 +7,8 @@ using UnityEngine.UI;
 public class AdminPanelManager : MonoBehaviour
 {
     public TextAsset alunosJson;
-    private AlunoList listaDeAlunos = new AlunoList(); 
+    private AlunoList listaDeAlunos = new AlunoList();
+    private string jsonFilePath;
 
     [Header("Grupos de Canvas")]
     public CanvasGroup backgroundCanvasGroup;
@@ -69,7 +71,6 @@ public class AdminPanelManager : MonoBehaviour
         public Aluno[] alunos;
     }
 
-
     void Start()
     {
         if (alunosEmptyCanvasGroup != null)
@@ -79,15 +80,18 @@ public class AdminPanelManager : MonoBehaviour
             alunosEmptyCanvasGroup.blocksRaycasts = false;
         }
 
+        jsonFilePath = Path.Combine(Application.persistentDataPath, "listaAlunos.json");
         CarregarDados();
         ShowAdminMenu();
     }
 
     private void CarregarDados()
     {
-       if (alunosJson != null)
+       if (File.Exists(jsonFilePath))
        {
-            listaDeAlunos = JsonUtility.FromJson<AlunoList>(alunosJson.text);
+            string jsonData = File.ReadAllText(jsonFilePath);
+
+            listaDeAlunos = JsonUtility.FromJson<AlunoList>(jsonData);
        }
     }
 
@@ -172,8 +176,7 @@ public class AdminPanelManager : MonoBehaviour
         {
             // Fase 1
             painelUI.fase1TextoTempo.text = $"Tempo: {aluno.fase1.tempo}s";
-            painelUI.fase1TextoPontuacao.text = $"Pontuação: {aluno.fase1.pontuacao}";
-            painelUI.fase1TaxaDeAcerto.text = $"Taxa de acerto: {aluno.fase1.taxaDeAcerto}%";
+            painelUI.fase1TextoPontuacao.text = $"Pontuação: {aluno.fase1.pontuacao}";        
 
             // Fase 2
             painelUI.fase2TextoTempo.text = $"Tempo: {aluno.fase2.tempo}s";

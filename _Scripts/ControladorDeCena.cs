@@ -40,4 +40,9 @@ public class ControladorDeCena : MonoBehaviour
     {
         SceneManager.LoadScene("_Scenes/Menu Inicial");
     }
+
+    public void IrParaMenuProfessor()
+    {
+        SceneManager.LoadScene("_Scenes/Menu Professor");
+    }
 }
