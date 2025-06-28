@@ -19,19 +19,19 @@ public class VolumeController : MonoBehaviour
 
     private void Start()
     {
-        sliderMusica.value = PlayerPrefs.GetFloat(MIXER_MUSICA, 1f);
-        sliderSons.value = PlayerPrefs.GetFloat(MIXER_SONS, 1f);
+        sliderMusica.value = PlayerPrefs.GetFloat(MIXER_MUSICA, 0.5f);
+        sliderSons.value = PlayerPrefs.GetFloat(MIXER_SONS, 0.5f);
     }
 
     public void SetVolumeMusica(float valor)
     {
-        audioMixer.SetFloat(MIXER_MUSICA, Mathf.Log10(valor) * 20);
+        audioMixer.SetFloat(MIXER_MUSICA, Mathf.Log10(valor) * 60);
         PlayerPrefs.SetFloat(MIXER_MUSICA, valor);
     }
 
     public void SetVolumeSons(float valor)
     {
-        audioMixer.SetFloat(MIXER_SONS, Mathf.Log10(valor) * 20);
+        audioMixer.SetFloat(MIXER_SONS, Mathf.Log10(valor) * 60);
         PlayerPrefs.SetFloat(MIXER_SONS, valor);
     }
 }
